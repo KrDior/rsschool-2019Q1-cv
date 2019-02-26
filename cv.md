@@ -1,9 +1,8 @@
 Saveli Savich
 ============
     
-e-mail: <krdiorka@gmail.com>
-mobile: +37529 765-09-50
-----------------------------
+e-mail: <krdiorka@gmail.com> 
+mobile: +37529 765-09-50 
 
 Summary
 --------
