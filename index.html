@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CV</title>
+    <link rel="stylesheet" href="./accerts/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Saveli Savich</h1>
+        <img src="./accerts/photo-cv.jpg" alt="photo">
+        <hr>
+        <hr>
+    </header>
+    <main>
+        <div>
+            <ul>
+                <li class="icon-phone"><a href="tel:+375297650950"><span>mobile: +37529 7 650 950</span></a></li>
+                <li class="icon-mail"><a href="mailto:krdiorka@gmail.com"><span>e-mail: krdiorka@gmail.com</span></a></li>
+            </ul>
+        </div>
+        <hr>
+        <article>
+            <h2>Summary</h2>
+            <hr>
+            <h3>Why I will be part of your team:</h3>
+            <p>Every day I wake up with thoughts that I <span>must something change</span> that I can do it. I suppose
+                I’m
+                technical
+                guy and I like all around tech sphere. Like in RPG game I <span>like to improve my skills/ability</span>,
+                in this
+                way
+                programming it’s amazing case for live gaming <span>where you could improving yourself</span> so much
+                as you
+                can.
+                Nowadays I’m a little less than 30 and I know <span>how need work</span>, what I want and I totally
+                sure that
+                without
+                permanent <span>self-development</span> I can not be…</p>
+        </article>
+
+        <article>
+            <h2>Skills</h2>
+            <hr>
+            <div>
+                <h3>Programming languages:</h3>
+                <p><span>first-lang:</span> Python beginning knowledge (online course in <a href="https://stepik.org/course/67">Stepik.org</a>);</p>
+                <span>second-lang:</span>
+                <ul>
+                    <li>javaScript beginning knowledge (reading <a href="https://developer.mozilla.org/ru/">developer.mozilla</a>,
+                        <a href="http://www.javascript.ru">javascript.ru</a> and other online articles; online course
+                        in <a href="https://stepik.org">Stepik.org</a>; workout in <a href="https://www.freecodecamp.org/">freeCodeCamp</a>;</li>
+                    <li>HTML/CSS online course in <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers?">coursera.org</a>.
+                    </li>
+                </ul>
+            </div>
+
+        </article>
+
+        <article>
+            <h2>Implementation data structure double linked list:</h2>
+            <hr>
+            <code>
+                function Node(element) {
+                this.element = element;
+                this.next = null;
+                this.prev = null;
+                };
+
+                function DoublyLinkedList() {
+                this.head = null;
+                this.tail = null;
+                this.length = 0;
+                };
+
+                DoublyLinkedList.prototype.addToHead = function (element) {
+                let node = new Node(element);
+                if (this.head) {
+                this.head.prev = node;
+                node.next = this.head;
+                } else {
+                this.tail = node;
+                }
+                this.head = node;
+                this.length++;
+                };
+
+                DoublyLinkedList.prototype.addToTail = function (element) {
+                let node = new Node(element);
+                if (this.tail) {
+                this.tail.next = node;
+                node.prev = this.tail;
+                } else {
+                this.head = node;
+                }
+                this.tail = node;
+                this.length++;
+                };
+            </code>
+        </article>
+
+        <h2>Experience:</h2>
+        <hr>
+        <p><span>HTML coding example:</span><a href="http://mjane.surge.sh/">link</a></p>
+
+        <article>
+            <h2>Education:</h2>
+            <hr>
+            <p><span>BSUIR</span>// all online courses look please paragraph №4.</p>
+        </article>
+
+        <section>
+            <h2>Plugins</h2>
+            <p>Have experience with the following plugins. You can see list of them below.</p>
+        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th><span>Plugin</span></th>
+                    <th><span>README </span></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span>Dropbox</span></td>
+                    <td><a href="https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md">plugins/dropbox/README.md</a></td>
+                </tr>
+                <tr>
+                    <td><span>Github</span></td>
+                    <td><a href="https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md">plugins/github/README.md</a></td>
+                </tr>
+                <tr>
+                    <td><span>Google Drive </span></td>
+                    <td><a href="https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md">plugins/googledrive/README.md</a></td>
+                </tr>
+                <tr>
+                    <td><span>OneDrive </span></td>
+                    <td><a href="https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md">plugins/onedrive/README.md</a></td>
+                </tr>
+                <tr>
+                    <td><span>Fontello</span></td>
+                    <td><a href="https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md">plugins/fontello-webpack-plugin/README.md</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <article>
+            <h2>Language skills:</h2>
+            <hr>
+            <p>Between <span>B1</span> and <span>B2</span> level. I have <span>experience of studying in English</span>;
+                can <span>read unadapted</span> literature.</p>
+        </article>
+
+        <div>
+            <p>I will be studying!<br /> I will be work hard!<br />I will be better!<br />
+
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
