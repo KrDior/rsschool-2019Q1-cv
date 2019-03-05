@@ -311,9 +311,16 @@ p.margin {
 .hide {
 	display: none;
 }
-.demo h2 {
+.demo span {
 	width: 350px;
-	margin-left: -40px;
+	float: left;
+	line-height: 40px;
+	border-bottom: 2px solid #000;
+	margin: 0 0 20px 0;
+	color: #000;
+	text-rendering: optimizeLegibility;
+	font-family: 'Yanone Kaffeesatz', Arial, Helvetica, sans-serif;
+	font-size: 36px;
 }
 .hide+label~div {
 	display: none;
@@ -323,6 +330,7 @@ p.margin {
 	color: rgb(6, 7, 6);
 	cursor: pointer;
 	display: inline-block;
+	
 
 }
 .hide:checked+label {
@@ -336,14 +344,11 @@ p.margin {
 	-webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
 	box-shadow: inset 3px 3px 10px #7d8e8f;
 	padding: 10px 60px;
-	margin-left: -40px;
 	height: 500px;
 }
 
-.demo {
-	margin: 5% 10%;
-}
+
 .code {
 	position: relative;
-	left: -250px;
+	left: -500px;
 }
